@@ -1,0 +1,153 @@
+:root {
+  --bg: #F7F5F0;
+  --ink: #111111;
+  --muted: #3d3d3d;
+  --accent: #2B4DFF;
+  --placeholder: #E4E0D6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+a { 
+    color: var(--ink); 
+    text-decoration: none;
+    text-align: left;
+}
+    
+
+.container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 48px; }
+
+.container1 { 
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 125px 0px; }
+
+.base {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px; 
+    margin: 10 auto;
+    padding: 20px 0px;
+    font-size: 20px; 
+}
+
+.logo {
+    font-weight: 650px;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.snav-links { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+}
+
+.upper { 
+    padding-top: 96px; 
+    padding-bottom: 40px; 
+}
+.eyebrow { 
+    font-size: 16px; 
+    font-weight: 500; 
+    color: var(--accent); 
+    margin-bottom: 20px; 
+}
+
+.world {
+    margin: 0 0 50px;
+    padding: 50px 108px;
+    font-weight: bold;
+    font-size: clamp(30px, 50px, 20px);
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    line-height: 1.02;
+    
+}
+       
+
+.explain {
+    margin: 50;
+    padding: 0px 0px;
+    font-size: 20px;
+}
+    
+.grid-work { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 24px; 
+}
+.grid-services { 
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+    gap: 24px;
+}
+
+.img-placeholder {
+    height: 220px; 
+    background: var(--placeholder); 
+    border-radius: 16px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: var(--muted); 
+    font-size: 10px;
+    
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+.card-title {
+    margin-top: 14px; 
+    font-weight: 700;
+    font-size: 20px; 
+}
+
+.card-text { 
+    margin-top: 30px; 
+    padding: 0;
+    color: var(--muted); 
+    line-height: 1.5; 
+    font-size: 20px;
+}
+
+.about { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 48px; 
+    align-items: center;
+}
+.about .img-placeholder { 
+    flex: 1 1 100px; 
+    height: 500px; 
+}
+.about-text { 
+    flex: 1 1 340px; 
+}
+.about-text h2 { 
+    margin-bottom: 16px; 
+}
+.about-text p { 
+    margin: 0; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: var(--muted); 
+}
